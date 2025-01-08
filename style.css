@@ -1,7 +1,8 @@
-html, body {
+body {
     width: 100%;
     height: 100%;
     font-family: system-ui;
+    margin: 0;
 }
 
 #message-form * {
@@ -21,9 +22,30 @@ html, body {
 
 #message-form {
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: rgb(180, 228, 196);
     position: fixed;
     bottom: 2em;
     right: 2em;
+}
+
+.message article {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1em;
+    width: 60%;
+}
+
+.message img {
+    display: inline-block;
+    margin: 0.5em;
+    max-width: 40%;
+    max-height: 7em;
+}
+
+.message {
+    background: rgb(180, 228, 196);
+    border-radius: 0.5em;
+    margin: 1em;
+    width: 60%;
 }
