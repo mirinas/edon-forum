@@ -9,26 +9,25 @@
 </head>
 <body>
 
-    <form action="https://script.google.com/macros/s/AKfycbwP_kh4FP23dYoqcGS8Pkgq_s7Oc4LocyBapNoteIPp8Rr-X2VP4pD9oea2CqQKWKJ5Ew/exec"
-    method="post" id="message-form">
+    <form onsubmit="return false" id="message-form">
         <input name="user" placeholder="Username" />
         <textarea name="content" placeholder="Your message..."></textarea>
         <input type="url" name="link" placeholder="Image link" />
-        <input type="submit" value="Send" />
+        <button onclick="sendMessage()">Send</button>
     </form>
 
     <main>
-        <div style="display: none;" id="message-template">
-            <div class="message">
-                <article>
-                    <h3>{{user}}</h3>
-                    <p>{{content}}</p>
-                </article>
-                <img src="{{link}}" />
-            </div>
-        </div>
-
     </main>
+
+    <div style="display: none;" id="message-template">
+        <div class="message">
+            <article>
+                <h3>{{user}}</h3>
+                <p>{{content}}</p>
+            </article>
+            <img src="{{link}}" />
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
