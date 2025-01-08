@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edOn Forum</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -11,9 +12,12 @@
 
     </main>
 
-    <div id="message-container">
-
-    </div>
+    <form id="message-form">
+        <input name="user" placeholder="Username" />
+        <textarea name="content" placeholder="Your message..."></textarea>
+        <input type="url" name="link" placeholder="Image link" />
+        <input type="submit" value="Send" />
+    </form>
     
 </body>
 </html>
