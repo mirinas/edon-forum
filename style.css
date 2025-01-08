@@ -49,3 +49,14 @@ body {
     margin: 1em;
     width: 60%;
 }
+
+@media (max-width: 900px) {
+    .message {
+        width: 90%;
+    }
+    #message-form {
+        position: static;
+        display: inline-block;
+        margin: 1em;
+    }
+}
